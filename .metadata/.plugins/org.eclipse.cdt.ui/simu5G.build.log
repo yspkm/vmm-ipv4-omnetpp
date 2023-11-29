@@ -1,0 +1,16 @@
+23:05:12 **** Incremental Build of configuration gcc-release for project simu5G ****
+make MODE=release all 
+make[1]: 디렉터리 '/home/jkmxm/work/2023/vmm-ipv4-omnetpp/simu5G/src' 들어감
+apps/mecRequestResponseApp/MecRequestApp.cc
+common/binder/Binder.cc
+nodes/backgroundCell/BackgroundCellChannelModel.cc
+stack/phy/ChannelModel/LteRealisticChannelModel.cc
+stack/phy/feedback/LteDlFeedbackGenerator.cc
+stack/phy/layer/LtePhyUe.cc
+stack/phy/layer/LtePhyUeD2D.cc
+stack/phy/layer/NRPhyUe.cc
+Creating shared library: ../out/gcc-release/src/libsimu5g.so
+make[1]: 디렉터리 '/home/jkmxm/work/2023/vmm-ipv4-omnetpp/simu5G/src' 나감
+
+23:05:40 Build Finished. 0 errors, 0 warnings. (took 27s.983ms)
+

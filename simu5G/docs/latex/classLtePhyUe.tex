@@ -1,0 +1,454 @@
+\hypertarget{classLtePhyUe}{}\doxysection{Lte\+Phy\+Ue Class Reference}
+\label{classLtePhyUe}\index{LtePhyUe@{LtePhyUe}}
+
+
+{\ttfamily \#include $<$Lte\+Phy\+Ue.\+h$>$}
+
+
+
+Inheritance diagram for Lte\+Phy\+Ue\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classLtePhyUe__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Lte\+Phy\+Ue\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classLtePhyUe__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLtePhyUe_a8cbaebc152edf2132ee21edfe697973c}{Lte\+Phy\+Ue}} ()
+\item 
+virtual \mbox{\hyperlink{classLtePhyUe_aa044bff16dc07fb4e7e81bd26396775c}{$\sim$\+Lte\+Phy\+Ue}} ()
+\item 
+Das\+Filter $\ast$ \mbox{\hyperlink{classLtePhyUe_a8f71e4306b1b0ad3f63f747b943e5af1}{get\+Das\+Filter}} ()
+\item 
+virtual void \mbox{\hyperlink{classLtePhyUe_aa123d140c781e59f1c2ea1a1c08e371c}{send\+Feedback}} (Lte\+Feedback\+Double\+Vector fb\+Dl, Lte\+Feedback\+Double\+Vector fb\+Ul, Feedback\+Request req)
+\item 
+Mac\+Node\+Id \mbox{\hyperlink{classLtePhyUe_a9e25259b8f056c3bc315b4cd17452383}{get\+Master\+Id}} () const
+\item 
+omnetpp\+::simtime\+\_\+t \mbox{\hyperlink{classLtePhyUe_a3802c55423b367a18bbc2660a8e7e963}{coherence\+Time}} (double speed)
+\item 
+void \mbox{\hyperlink{classLtePhyUe_a6a533786fea945c675c8e2ac6aaf1488}{record\+Cqi}} (unsigned int sample, Direction dir)
+\item 
+double \mbox{\hyperlink{classLtePhyUe_ae0e33d450c1972c929fa2c8152b05d8f}{get\+Average\+Cqi}} (Direction dir)
+\item 
+double \mbox{\hyperlink{classLtePhyUe_a41671aecde362a3c9d3d3339591b52ac}{get\+Variance\+Cqi}} (Direction dir)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classLtePhyUe_a86051afcc9fd4f011727d1ee3d6f34ba}{initialize}} (int stage) override
+\item 
+virtual void \mbox{\hyperlink{classLtePhyUe_a5b472b1d675e05d0fa49f86301f7519d}{handle\+Self\+Message}} (omnetpp\+::c\+Message $\ast$msg) override
+\item 
+virtual void \mbox{\hyperlink{classLtePhyUe_a10f6fbd7965c8fa756c84c6ba11451fb}{handle\+Air\+Frame}} (omnetpp\+::c\+Message $\ast$msg) override
+\item 
+virtual void \mbox{\hyperlink{classLtePhyUe_a8d4e3687b016040a3e90d4c6d20fa9fb}{finish}} () override
+\item 
+virtual void \mbox{\hyperlink{classLtePhyUe_a5ecec78bb181b401e992c820c89de4a7}{finish}} (c\+Component $\ast$component, omnetpp\+::simsignal\+\_\+t signal\+ID) override
+\item 
+virtual void \mbox{\hyperlink{classLtePhyUe_af76501fe02519c6d9da26bcb45db9dee}{handle\+Upper\+Message}} (omnetpp\+::c\+Message $\ast$msg) override
+\item 
+double \mbox{\hyperlink{classLtePhyUe_a9deba07f54429948227350aa8f8a2a39}{update\+Hysteresis\+Th}} (double v)
+\item 
+void \mbox{\hyperlink{classLtePhyUe_a09b481f879d0ec34592720e0bf33dca6}{handover\+Handler}} (Lte\+Air\+Frame $\ast$frame, User\+Control\+Info $\ast$lte\+Info)
+\item 
+void \mbox{\hyperlink{classLtePhyUe_a757ce765336a99c2dedb8f12e2ab399b}{delete\+Old\+Buffers}} (Mac\+Node\+Id master\+Id)
+\item 
+virtual void \mbox{\hyperlink{classLtePhyUe_a9b2ce26da19fa911a8aa4affe973028c}{trigger\+Handover}} ()
+\item 
+virtual void \mbox{\hyperlink{classLtePhyUe_afc10c9d163b74c3cfc0354c89f3bbf2e}{do\+Handover}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Mac\+Node\+Id \mbox{\hyperlink{classLtePhyUe_ada87a2e55c54597b5575aacd82d10c2e}{master\+Id\+\_\+}}
+\item 
+omnetpp\+::simsignal\+\_\+t \mbox{\hyperlink{classLtePhyUe_ab3cf2da3c9c8f78c737f17c03a88d39c}{serving\+Cell\+\_\+}}
+\item 
+omnetpp\+::c\+Message $\ast$ \mbox{\hyperlink{classLtePhyUe_a336985779e34eab9c030bfddbfab6f1c}{handover\+Starter\+\_\+}}
+\item 
+omnetpp\+::c\+Message $\ast$ \mbox{\hyperlink{classLtePhyUe_ad0d396493b83f0f8c030ada9f767eab7}{handover\+Trigger\+\_\+}}
+\item 
+double \mbox{\hyperlink{classLtePhyUe_a6f5925df43bfdc0ba5379f9638b0eff7}{current\+Master\+Rssi\+\_\+}}
+\item 
+Mac\+Node\+Id \mbox{\hyperlink{classLtePhyUe_aaa2b0d57dd470bb19024cef3e7513f80}{candidate\+Master\+Id\+\_\+}}
+\item 
+double \mbox{\hyperlink{classLtePhyUe_ad47a0c014a2e8ec8702dc3bcb27fc944}{candidate\+Master\+Rssi\+\_\+}}
+\item 
+double \mbox{\hyperlink{classLtePhyUe_a22e41a494891892f7f528d6493e4448a}{hysteresis\+Th\+\_\+}}
+\item 
+double \mbox{\hyperlink{classLtePhyUe_a1c5a75a0ebd3e1ff96a5a036868695b2}{hysteresis\+Factor\+\_\+}}
+\item 
+double \mbox{\hyperlink{classLtePhyUe_aef29e8b5f188a27ef30c761afa080e12}{handover\+Delta\+\_\+}}
+\item 
+double \mbox{\hyperlink{classLtePhyUe_a2930046a60719950675f3e9546598817}{handover\+Latency\+\_\+}}
+\item 
+double \mbox{\hyperlink{classLtePhyUe_a852be5f1f717934a17ff4b838e1e8ed3}{handover\+Detachment\+\_\+}}
+\item 
+double \mbox{\hyperlink{classLtePhyUe_af1d52e8c1c68158fa81ca61e0b66dc82}{handover\+Attachment\+\_\+}}
+\item 
+double \mbox{\hyperlink{classLtePhyUe_a7069f3f7f3751fff6eddaa8712794f9d}{min\+Rssi\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classLtePhyUe_a887af50676017a42e7cf06176feba775}{enable\+Handover\+\_\+}}
+\item 
+Das\+Filter $\ast$ \mbox{\hyperlink{classLtePhyUe_adb4222fdd4d4dbb4e55a4a46ee0f99a7}{das\+\_\+}}
+\item 
+double \mbox{\hyperlink{classLtePhyUe_ae35e0f96aa7ac26078d4369ea45a2071}{das\+Rssi\+Threshold\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Threshold for antenna association. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLtePhyUe_aafbc695debf80aa26e892d58e4030867}{use\+Battery\+\_\+}}
+\item 
+double \mbox{\hyperlink{classLtePhyUe_ae0277591e29fc4a3122d3a3bbfa67dfc}{tx\+Amount\+\_\+}}
+\item 
+double \mbox{\hyperlink{classLtePhyUe_a1655007e145a37e3d5b29240b7a5a624}{rx\+Amount\+\_\+}}
+\item 
+Lte\+Mac\+Ue $\ast$ \mbox{\hyperlink{classLtePhyUe_a8756347038510186713246bc9be5a5f6}{mac\+\_\+}}
+\item 
+Lte\+Rlc\+Um $\ast$ \mbox{\hyperlink{classLtePhyUe_a146870a2ffc3760f5900892288de5851}{rlc\+Um\+\_\+}}
+\item 
+Lte\+Pdcp\+Rrc\+Base $\ast$ \mbox{\hyperlink{classLtePhyUe_ab39a72acba8743a05d2522290d2ed441}{pdcp\+\_\+}}
+\item 
+omnetpp\+::simtime\+\_\+t \mbox{\hyperlink{classLtePhyUe_af8d4feb9362cfbe73e73144bcdcd2a3c}{last\+Feedback\+\_\+}}
+\item 
+std\+::vector$<$ short int $>$ \mbox{\hyperlink{classLtePhyUe_a67a6c421e177133ba3a8786fd51be924}{cqi\+Dl\+Samples\+\_\+}}
+\item 
+std\+::vector$<$ short int $>$ \mbox{\hyperlink{classLtePhyUe_a2e7997f5907e693823ec1bfe0daad11f}{cqi\+Ul\+Samples\+\_\+}}
+\item 
+unsigned int \mbox{\hyperlink{classLtePhyUe_a01262ca602a54b2ae66161afe13da313}{cqi\+Dl\+Sum\+\_\+}}
+\item 
+unsigned int \mbox{\hyperlink{classLtePhyUe_a98d44cabdbfb0d7ba76d74ea6896fe2f}{cqi\+Ul\+Sum\+\_\+}}
+\item 
+unsigned int \mbox{\hyperlink{classLtePhyUe_ac45c88bf9ec55db0501d998aa2546d35}{cqi\+Dl\+Count\+\_\+}}
+\item 
+unsigned int \mbox{\hyperlink{classLtePhyUe_ad96777bc62abc307bac85ba0f162f375}{cqi\+Ul\+Count\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLtePhyUe_a8cbaebc152edf2132ee21edfe697973c}\label{classLtePhyUe_a8cbaebc152edf2132ee21edfe697973c}} 
+\index{LtePhyUe@{LtePhyUe}!LtePhyUe@{LtePhyUe}}
+\index{LtePhyUe@{LtePhyUe}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{LtePhyUe()}{LtePhyUe()}}
+{\footnotesize\ttfamily Lte\+Phy\+Ue\+::\+Lte\+Phy\+Ue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLtePhyUe_aa044bff16dc07fb4e7e81bd26396775c}\label{classLtePhyUe_aa044bff16dc07fb4e7e81bd26396775c}} 
+\index{LtePhyUe@{LtePhyUe}!````~LtePhyUe@{$\sim$LtePhyUe}}
+\index{````~LtePhyUe@{$\sim$LtePhyUe}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{$\sim$LtePhyUe()}{~LtePhyUe()}}
+{\footnotesize\ttfamily Lte\+Phy\+Ue\+::$\sim$\+Lte\+Phy\+Ue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLtePhyUe_a3802c55423b367a18bbc2660a8e7e963}\label{classLtePhyUe_a3802c55423b367a18bbc2660a8e7e963}} 
+\index{LtePhyUe@{LtePhyUe}!coherenceTime@{coherenceTime}}
+\index{coherenceTime@{coherenceTime}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{coherenceTime()}{coherenceTime()}}
+{\footnotesize\ttfamily omnetpp\+::simtime\+\_\+t Lte\+Phy\+Ue\+::coherence\+Time (\begin{DoxyParamCaption}\item[{double}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a757ce765336a99c2dedb8f12e2ab399b}\label{classLtePhyUe_a757ce765336a99c2dedb8f12e2ab399b}} 
+\index{LtePhyUe@{LtePhyUe}!deleteOldBuffers@{deleteOldBuffers}}
+\index{deleteOldBuffers@{deleteOldBuffers}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{deleteOldBuffers()}{deleteOldBuffers()}}
+{\footnotesize\ttfamily void Lte\+Phy\+Ue\+::delete\+Old\+Buffers (\begin{DoxyParamCaption}\item[{Mac\+Node\+Id}]{master\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_afc10c9d163b74c3cfc0354c89f3bbf2e}\label{classLtePhyUe_afc10c9d163b74c3cfc0354c89f3bbf2e}} 
+\index{LtePhyUe@{LtePhyUe}!doHandover@{doHandover}}
+\index{doHandover@{doHandover}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{doHandover()}{doHandover()}}
+{\footnotesize\ttfamily void Lte\+Phy\+Ue\+::do\+Handover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a8d4e3687b016040a3e90d4c6d20fa9fb}\label{classLtePhyUe_a8d4e3687b016040a3e90d4c6d20fa9fb}} 
+\index{LtePhyUe@{LtePhyUe}!finish@{finish}}
+\index{finish@{finish}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{finish()}{finish()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Lte\+Phy\+Ue\+::finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a5ecec78bb181b401e992c820c89de4a7}\label{classLtePhyUe_a5ecec78bb181b401e992c820c89de4a7}} 
+\index{LtePhyUe@{LtePhyUe}!finish@{finish}}
+\index{finish@{finish}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{finish()}{finish()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Lte\+Phy\+Ue\+::finish (\begin{DoxyParamCaption}\item[{c\+Component $\ast$}]{component,  }\item[{omnetpp\+::simsignal\+\_\+t}]{signal\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classLtePhyUe_ae0e33d450c1972c929fa2c8152b05d8f}\label{classLtePhyUe_ae0e33d450c1972c929fa2c8152b05d8f}} 
+\index{LtePhyUe@{LtePhyUe}!getAverageCqi@{getAverageCqi}}
+\index{getAverageCqi@{getAverageCqi}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{getAverageCqi()}{getAverageCqi()}}
+{\footnotesize\ttfamily double Lte\+Phy\+Ue\+::get\+Average\+Cqi (\begin{DoxyParamCaption}\item[{Direction}]{dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLtePhyUe_a8f71e4306b1b0ad3f63f747b943e5af1}\label{classLtePhyUe_a8f71e4306b1b0ad3f63f747b943e5af1}} 
+\index{LtePhyUe@{LtePhyUe}!getDasFilter@{getDasFilter}}
+\index{getDasFilter@{getDasFilter}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{getDasFilter()}{getDasFilter()}}
+{\footnotesize\ttfamily Das\+Filter $\ast$ Lte\+Phy\+Ue\+::get\+Das\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLtePhyUe_a9e25259b8f056c3bc315b4cd17452383}\label{classLtePhyUe_a9e25259b8f056c3bc315b4cd17452383}} 
+\index{LtePhyUe@{LtePhyUe}!getMasterId@{getMasterId}}
+\index{getMasterId@{getMasterId}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{getMasterId()}{getMasterId()}}
+{\footnotesize\ttfamily Mac\+Node\+Id Lte\+Phy\+Ue\+::get\+Master\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a41671aecde362a3c9d3d3339591b52ac}\label{classLtePhyUe_a41671aecde362a3c9d3d3339591b52ac}} 
+\index{LtePhyUe@{LtePhyUe}!getVarianceCqi@{getVarianceCqi}}
+\index{getVarianceCqi@{getVarianceCqi}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{getVarianceCqi()}{getVarianceCqi()}}
+{\footnotesize\ttfamily double Lte\+Phy\+Ue\+::get\+Variance\+Cqi (\begin{DoxyParamCaption}\item[{Direction}]{dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLtePhyUe_a10f6fbd7965c8fa756c84c6ba11451fb}\label{classLtePhyUe_a10f6fbd7965c8fa756c84c6ba11451fb}} 
+\index{LtePhyUe@{LtePhyUe}!handleAirFrame@{handleAirFrame}}
+\index{handleAirFrame@{handleAirFrame}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{handleAirFrame()}{handleAirFrame()}}
+{\footnotesize\ttfamily void Lte\+Phy\+Ue\+::handle\+Air\+Frame (\begin{DoxyParamCaption}\item[{omnetpp\+::c\+Message $\ast$}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a5b472b1d675e05d0fa49f86301f7519d}\label{classLtePhyUe_a5b472b1d675e05d0fa49f86301f7519d}} 
+\index{LtePhyUe@{LtePhyUe}!handleSelfMessage@{handleSelfMessage}}
+\index{handleSelfMessage@{handleSelfMessage}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{handleSelfMessage()}{handleSelfMessage()}}
+{\footnotesize\ttfamily void Lte\+Phy\+Ue\+::handle\+Self\+Message (\begin{DoxyParamCaption}\item[{omnetpp\+::c\+Message $\ast$}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classLtePhyUe_af76501fe02519c6d9da26bcb45db9dee}\label{classLtePhyUe_af76501fe02519c6d9da26bcb45db9dee}} 
+\index{LtePhyUe@{LtePhyUe}!handleUpperMessage@{handleUpperMessage}}
+\index{handleUpperMessage@{handleUpperMessage}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{handleUpperMessage()}{handleUpperMessage()}}
+{\footnotesize\ttfamily void Lte\+Phy\+Ue\+::handle\+Upper\+Message (\begin{DoxyParamCaption}\item[{omnetpp\+::c\+Message $\ast$}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a09b481f879d0ec34592720e0bf33dca6}\label{classLtePhyUe_a09b481f879d0ec34592720e0bf33dca6}} 
+\index{LtePhyUe@{LtePhyUe}!handoverHandler@{handoverHandler}}
+\index{handoverHandler@{handoverHandler}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{handoverHandler()}{handoverHandler()}}
+{\footnotesize\ttfamily void Lte\+Phy\+Ue\+::handover\+Handler (\begin{DoxyParamCaption}\item[{Lte\+Air\+Frame $\ast$}]{frame,  }\item[{User\+Control\+Info $\ast$}]{lte\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a86051afcc9fd4f011727d1ee3d6f34ba}\label{classLtePhyUe_a86051afcc9fd4f011727d1ee3d6f34ba}} 
+\index{LtePhyUe@{LtePhyUe}!initialize@{initialize}}
+\index{initialize@{initialize}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void Lte\+Phy\+Ue\+::initialize (\begin{DoxyParamCaption}\item[{int}]{stage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a6a533786fea945c675c8e2ac6aaf1488}\label{classLtePhyUe_a6a533786fea945c675c8e2ac6aaf1488}} 
+\index{LtePhyUe@{LtePhyUe}!recordCqi@{recordCqi}}
+\index{recordCqi@{recordCqi}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{recordCqi()}{recordCqi()}}
+{\footnotesize\ttfamily void Lte\+Phy\+Ue\+::record\+Cqi (\begin{DoxyParamCaption}\item[{unsigned int}]{sample,  }\item[{Direction}]{dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLtePhyUe_aa123d140c781e59f1c2ea1a1c08e371c}\label{classLtePhyUe_aa123d140c781e59f1c2ea1a1c08e371c}} 
+\index{LtePhyUe@{LtePhyUe}!sendFeedback@{sendFeedback}}
+\index{sendFeedback@{sendFeedback}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{sendFeedback()}{sendFeedback()}}
+{\footnotesize\ttfamily void Lte\+Phy\+Ue\+::send\+Feedback (\begin{DoxyParamCaption}\item[{Lte\+Feedback\+Double\+Vector}]{fb\+Dl,  }\item[{Lte\+Feedback\+Double\+Vector}]{fb\+Ul,  }\item[{Feedback\+Request}]{req }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Send Feedback, called by feedback generator in DL \mbox{\Hypertarget{classLtePhyUe_a9b2ce26da19fa911a8aa4affe973028c}\label{classLtePhyUe_a9b2ce26da19fa911a8aa4affe973028c}} 
+\index{LtePhyUe@{LtePhyUe}!triggerHandover@{triggerHandover}}
+\index{triggerHandover@{triggerHandover}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{triggerHandover()}{triggerHandover()}}
+{\footnotesize\ttfamily void Lte\+Phy\+Ue\+::trigger\+Handover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a9deba07f54429948227350aa8f8a2a39}\label{classLtePhyUe_a9deba07f54429948227350aa8f8a2a39}} 
+\index{LtePhyUe@{LtePhyUe}!updateHysteresisTh@{updateHysteresisTh}}
+\index{updateHysteresisTh@{updateHysteresisTh}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{updateHysteresisTh()}{updateHysteresisTh()}}
+{\footnotesize\ttfamily double Lte\+Phy\+Ue\+::update\+Hysteresis\+Th (\begin{DoxyParamCaption}\item[{double}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Utility function to update the hysteresis threshold using hysteresis\+Factor\+\_\+. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classLtePhyUe_aaa2b0d57dd470bb19024cef3e7513f80}\label{classLtePhyUe_aaa2b0d57dd470bb19024cef3e7513f80}} 
+\index{LtePhyUe@{LtePhyUe}!candidateMasterId\_@{candidateMasterId\_}}
+\index{candidateMasterId\_@{candidateMasterId\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{candidateMasterId\_}{candidateMasterId\_}}
+{\footnotesize\ttfamily Mac\+Node\+Id Lte\+Phy\+Ue\+::candidate\+Master\+Id\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+ID of not-\/master node from wich highest RSSI was received \mbox{\Hypertarget{classLtePhyUe_ad47a0c014a2e8ec8702dc3bcb27fc944}\label{classLtePhyUe_ad47a0c014a2e8ec8702dc3bcb27fc944}} 
+\index{LtePhyUe@{LtePhyUe}!candidateMasterRssi\_@{candidateMasterRssi\_}}
+\index{candidateMasterRssi\_@{candidateMasterRssi\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{candidateMasterRssi\_}{candidateMasterRssi\_}}
+{\footnotesize\ttfamily double Lte\+Phy\+Ue\+::candidate\+Master\+Rssi\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Highest RSSI received from not-\/master node \mbox{\Hypertarget{classLtePhyUe_ac45c88bf9ec55db0501d998aa2546d35}\label{classLtePhyUe_ac45c88bf9ec55db0501d998aa2546d35}} 
+\index{LtePhyUe@{LtePhyUe}!cqiDlCount\_@{cqiDlCount\_}}
+\index{cqiDlCount\_@{cqiDlCount\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{cqiDlCount\_}{cqiDlCount\_}}
+{\footnotesize\ttfamily unsigned int Lte\+Phy\+Ue\+::cqi\+Dl\+Count\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a67a6c421e177133ba3a8786fd51be924}\label{classLtePhyUe_a67a6c421e177133ba3a8786fd51be924}} 
+\index{LtePhyUe@{LtePhyUe}!cqiDlSamples\_@{cqiDlSamples\_}}
+\index{cqiDlSamples\_@{cqiDlSamples\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{cqiDlSamples\_}{cqiDlSamples\_}}
+{\footnotesize\ttfamily std\+::vector$<$short int$>$ Lte\+Phy\+Ue\+::cqi\+Dl\+Samples\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a01262ca602a54b2ae66161afe13da313}\label{classLtePhyUe_a01262ca602a54b2ae66161afe13da313}} 
+\index{LtePhyUe@{LtePhyUe}!cqiDlSum\_@{cqiDlSum\_}}
+\index{cqiDlSum\_@{cqiDlSum\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{cqiDlSum\_}{cqiDlSum\_}}
+{\footnotesize\ttfamily unsigned int Lte\+Phy\+Ue\+::cqi\+Dl\+Sum\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_ad96777bc62abc307bac85ba0f162f375}\label{classLtePhyUe_ad96777bc62abc307bac85ba0f162f375}} 
+\index{LtePhyUe@{LtePhyUe}!cqiUlCount\_@{cqiUlCount\_}}
+\index{cqiUlCount\_@{cqiUlCount\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{cqiUlCount\_}{cqiUlCount\_}}
+{\footnotesize\ttfamily unsigned int Lte\+Phy\+Ue\+::cqi\+Ul\+Count\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a2e7997f5907e693823ec1bfe0daad11f}\label{classLtePhyUe_a2e7997f5907e693823ec1bfe0daad11f}} 
+\index{LtePhyUe@{LtePhyUe}!cqiUlSamples\_@{cqiUlSamples\_}}
+\index{cqiUlSamples\_@{cqiUlSamples\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{cqiUlSamples\_}{cqiUlSamples\_}}
+{\footnotesize\ttfamily std\+::vector$<$short int$>$ Lte\+Phy\+Ue\+::cqi\+Ul\+Samples\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a98d44cabdbfb0d7ba76d74ea6896fe2f}\label{classLtePhyUe_a98d44cabdbfb0d7ba76d74ea6896fe2f}} 
+\index{LtePhyUe@{LtePhyUe}!cqiUlSum\_@{cqiUlSum\_}}
+\index{cqiUlSum\_@{cqiUlSum\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{cqiUlSum\_}{cqiUlSum\_}}
+{\footnotesize\ttfamily unsigned int Lte\+Phy\+Ue\+::cqi\+Ul\+Sum\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a6f5925df43bfdc0ba5379f9638b0eff7}\label{classLtePhyUe_a6f5925df43bfdc0ba5379f9638b0eff7}} 
+\index{LtePhyUe@{LtePhyUe}!currentMasterRssi\_@{currentMasterRssi\_}}
+\index{currentMasterRssi\_@{currentMasterRssi\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{currentMasterRssi\_}{currentMasterRssi\_}}
+{\footnotesize\ttfamily double Lte\+Phy\+Ue\+::current\+Master\+Rssi\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+RSSI received from the current serving node \mbox{\Hypertarget{classLtePhyUe_adb4222fdd4d4dbb4e55a4a46ee0f99a7}\label{classLtePhyUe_adb4222fdd4d4dbb4e55a4a46ee0f99a7}} 
+\index{LtePhyUe@{LtePhyUe}!das\_@{das\_}}
+\index{das\_@{das\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{das\_}{das\_}}
+{\footnotesize\ttfamily Das\+Filter$\ast$ Lte\+Phy\+Ue\+::das\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pointer to the DAS Filter\+: used to call das function when receiving broadcasts and to retrieve physical antenna properties on packet reception \mbox{\Hypertarget{classLtePhyUe_ae35e0f96aa7ac26078d4369ea45a2071}\label{classLtePhyUe_ae35e0f96aa7ac26078d4369ea45a2071}} 
+\index{LtePhyUe@{LtePhyUe}!dasRssiThreshold\_@{dasRssiThreshold\_}}
+\index{dasRssiThreshold\_@{dasRssiThreshold\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{dasRssiThreshold\_}{dasRssiThreshold\_}}
+{\footnotesize\ttfamily double Lte\+Phy\+Ue\+::das\+Rssi\+Threshold\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Threshold for antenna association. 
+
+\mbox{\Hypertarget{classLtePhyUe_a887af50676017a42e7cf06176feba775}\label{classLtePhyUe_a887af50676017a42e7cf06176feba775}} 
+\index{LtePhyUe@{LtePhyUe}!enableHandover\_@{enableHandover\_}}
+\index{enableHandover\_@{enableHandover\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{enableHandover\_}{enableHandover\_}}
+{\footnotesize\ttfamily bool Lte\+Phy\+Ue\+::enable\+Handover\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handover switch \mbox{\Hypertarget{classLtePhyUe_af1d52e8c1c68158fa81ca61e0b66dc82}\label{classLtePhyUe_af1d52e8c1c68158fa81ca61e0b66dc82}} 
+\index{LtePhyUe@{LtePhyUe}!handoverAttachment\_@{handoverAttachment\_}}
+\index{handoverAttachment\_@{handoverAttachment\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{handoverAttachment\_}{handoverAttachment\_}}
+{\footnotesize\ttfamily double Lte\+Phy\+Ue\+::handover\+Attachment\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_aef29e8b5f188a27ef30c761afa080e12}\label{classLtePhyUe_aef29e8b5f188a27ef30c761afa080e12}} 
+\index{LtePhyUe@{LtePhyUe}!handoverDelta\_@{handoverDelta\_}}
+\index{handoverDelta\_@{handoverDelta\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{handoverDelta\_}{handoverDelta\_}}
+{\footnotesize\ttfamily double Lte\+Phy\+Ue\+::handover\+Delta\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Time interval elapsing from the reception of first handover broadcast message to the beginning of handover procedure. It must be a small number greater than 0 to ensure that all broadcast messages are received before evaluating handover. Note that broadcast messages for handover are always received at the very same time (at bdc\+Update\+Interval\+\_\+ seconds intervals). \mbox{\Hypertarget{classLtePhyUe_a852be5f1f717934a17ff4b838e1e8ed3}\label{classLtePhyUe_a852be5f1f717934a17ff4b838e1e8ed3}} 
+\index{LtePhyUe@{LtePhyUe}!handoverDetachment\_@{handoverDetachment\_}}
+\index{handoverDetachment\_@{handoverDetachment\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{handoverDetachment\_}{handoverDetachment\_}}
+{\footnotesize\ttfamily double Lte\+Phy\+Ue\+::handover\+Detachment\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a2930046a60719950675f3e9546598817}\label{classLtePhyUe_a2930046a60719950675f3e9546598817}} 
+\index{LtePhyUe@{LtePhyUe}!handoverLatency\_@{handoverLatency\_}}
+\index{handoverLatency\_@{handoverLatency\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{handoverLatency\_}{handoverLatency\_}}
+{\footnotesize\ttfamily double Lte\+Phy\+Ue\+::handover\+Latency\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a336985779e34eab9c030bfddbfab6f1c}\label{classLtePhyUe_a336985779e34eab9c030bfddbfab6f1c}} 
+\index{LtePhyUe@{LtePhyUe}!handoverStarter\_@{handoverStarter\_}}
+\index{handoverStarter\_@{handoverStarter\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{handoverStarter\_}{handoverStarter\_}}
+{\footnotesize\ttfamily omnetpp\+::c\+Message$\ast$ Lte\+Phy\+Ue\+::handover\+Starter\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Self message to trigger handover procedure evaluation \mbox{\Hypertarget{classLtePhyUe_ad0d396493b83f0f8c030ada9f767eab7}\label{classLtePhyUe_ad0d396493b83f0f8c030ada9f767eab7}} 
+\index{LtePhyUe@{LtePhyUe}!handoverTrigger\_@{handoverTrigger\_}}
+\index{handoverTrigger\_@{handoverTrigger\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{handoverTrigger\_}{handoverTrigger\_}}
+{\footnotesize\ttfamily omnetpp\+::c\+Message$\ast$ Lte\+Phy\+Ue\+::handover\+Trigger\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Self message to start the handover procedure \mbox{\Hypertarget{classLtePhyUe_a1c5a75a0ebd3e1ff96a5a036868695b2}\label{classLtePhyUe_a1c5a75a0ebd3e1ff96a5a036868695b2}} 
+\index{LtePhyUe@{LtePhyUe}!hysteresisFactor\_@{hysteresisFactor\_}}
+\index{hysteresisFactor\_@{hysteresisFactor\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{hysteresisFactor\_}{hysteresisFactor\_}}
+{\footnotesize\ttfamily double Lte\+Phy\+Ue\+::hysteresis\+Factor\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Value used to divide current\+Master\+Rssi\+\_\+ and create an hysteresis\+Th\+\_\+ Use zero to have hysteresis\+Th\+\_\+ == 0. \mbox{\Hypertarget{classLtePhyUe_a22e41a494891892f7f528d6493e4448a}\label{classLtePhyUe_a22e41a494891892f7f528d6493e4448a}} 
+\index{LtePhyUe@{LtePhyUe}!hysteresisTh\_@{hysteresisTh\_}}
+\index{hysteresisTh\_@{hysteresisTh\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{hysteresisTh\_}{hysteresisTh\_}}
+{\footnotesize\ttfamily double Lte\+Phy\+Ue\+::hysteresis\+Th\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Hysteresis threshold to evaluate handover\+: it introduces a small polarization to avoid multiple subsequent handovers \mbox{\Hypertarget{classLtePhyUe_af8d4feb9362cfbe73e73144bcdcd2a3c}\label{classLtePhyUe_af8d4feb9362cfbe73e73144bcdcd2a3c}} 
+\index{LtePhyUe@{LtePhyUe}!lastFeedback\_@{lastFeedback\_}}
+\index{lastFeedback\_@{lastFeedback\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{lastFeedback\_}{lastFeedback\_}}
+{\footnotesize\ttfamily omnetpp\+::simtime\+\_\+t Lte\+Phy\+Ue\+::last\+Feedback\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a8756347038510186713246bc9be5a5f6}\label{classLtePhyUe_a8756347038510186713246bc9be5a5f6}} 
+\index{LtePhyUe@{LtePhyUe}!mac\_@{mac\_}}
+\index{mac\_@{mac\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{mac\_}{mac\_}}
+{\footnotesize\ttfamily Lte\+Mac\+Ue$\ast$ Lte\+Phy\+Ue\+::mac\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_ada87a2e55c54597b5575aacd82d10c2e}\label{classLtePhyUe_ada87a2e55c54597b5575aacd82d10c2e}} 
+\index{LtePhyUe@{LtePhyUe}!masterId\_@{masterId\_}}
+\index{masterId\_@{masterId\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{masterId\_}{masterId\_}}
+{\footnotesize\ttfamily Mac\+Node\+Id Lte\+Phy\+Ue\+::master\+Id\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Master Mac\+Node\+Id \mbox{\Hypertarget{classLtePhyUe_a7069f3f7f3751fff6eddaa8712794f9d}\label{classLtePhyUe_a7069f3f7f3751fff6eddaa8712794f9d}} 
+\index{LtePhyUe@{LtePhyUe}!minRssi\_@{minRssi\_}}
+\index{minRssi\_@{minRssi\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{minRssi\_}{minRssi\_}}
+{\footnotesize\ttfamily double Lte\+Phy\+Ue\+::min\+Rssi\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_ab39a72acba8743a05d2522290d2ed441}\label{classLtePhyUe_ab39a72acba8743a05d2522290d2ed441}} 
+\index{LtePhyUe@{LtePhyUe}!pdcp\_@{pdcp\_}}
+\index{pdcp\_@{pdcp\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{pdcp\_}{pdcp\_}}
+{\footnotesize\ttfamily Lte\+Pdcp\+Rrc\+Base$\ast$ Lte\+Phy\+Ue\+::pdcp\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a146870a2ffc3760f5900892288de5851}\label{classLtePhyUe_a146870a2ffc3760f5900892288de5851}} 
+\index{LtePhyUe@{LtePhyUe}!rlcUm\_@{rlcUm\_}}
+\index{rlcUm\_@{rlcUm\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{rlcUm\_}{rlcUm\_}}
+{\footnotesize\ttfamily Lte\+Rlc\+Um$\ast$ Lte\+Phy\+Ue\+::rlc\+Um\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_a1655007e145a37e3d5b29240b7a5a624}\label{classLtePhyUe_a1655007e145a37e3d5b29240b7a5a624}} 
+\index{LtePhyUe@{LtePhyUe}!rxAmount\_@{rxAmount\_}}
+\index{rxAmount\_@{rxAmount\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{rxAmount\_}{rxAmount\_}}
+{\footnotesize\ttfamily double Lte\+Phy\+Ue\+::rx\+Amount\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_ab3cf2da3c9c8f78c737f17c03a88d39c}\label{classLtePhyUe_ab3cf2da3c9c8f78c737f17c03a88d39c}} 
+\index{LtePhyUe@{LtePhyUe}!servingCell\_@{servingCell\_}}
+\index{servingCell\_@{servingCell\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{servingCell\_}{servingCell\_}}
+{\footnotesize\ttfamily omnetpp\+::simsignal\+\_\+t Lte\+Phy\+Ue\+::serving\+Cell\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Statistic for serving cell \mbox{\Hypertarget{classLtePhyUe_ae0277591e29fc4a3122d3a3bbfa67dfc}\label{classLtePhyUe_ae0277591e29fc4a3122d3a3bbfa67dfc}} 
+\index{LtePhyUe@{LtePhyUe}!txAmount\_@{txAmount\_}}
+\index{txAmount\_@{txAmount\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{txAmount\_}{txAmount\_}}
+{\footnotesize\ttfamily double Lte\+Phy\+Ue\+::tx\+Amount\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLtePhyUe_aafbc695debf80aa26e892d58e4030867}\label{classLtePhyUe_aafbc695debf80aa26e892d58e4030867}} 
+\index{LtePhyUe@{LtePhyUe}!useBattery\_@{useBattery\_}}
+\index{useBattery\_@{useBattery\_}!LtePhyUe@{LtePhyUe}}
+\doxysubsubsection{\texorpdfstring{useBattery\_}{useBattery\_}}
+{\footnotesize\ttfamily bool Lte\+Phy\+Ue\+::use\+Battery\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+set to false if a battery is not present in module or must have infinite capacity 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/stack/phy/layer/\mbox{\hyperlink{LtePhyUe_8h}{Lte\+Phy\+Ue.\+h}}\item 
+src/stack/phy/layer/\mbox{\hyperlink{LtePhyUe_8cc}{Lte\+Phy\+Ue.\+cc}}\end{DoxyCompactItemize}

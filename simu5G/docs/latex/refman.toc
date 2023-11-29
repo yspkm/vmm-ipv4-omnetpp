@@ -1,0 +1,70 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Lte\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Phy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ue Class Reference}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Constructor \& Destructor Documentation}{9}{subsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}LtePhyUe()}{9}{subsubsection.4.1.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.2}$\sim $LtePhyUe()}{9}{subsubsection.4.1.1.2}%
+\contentsline {subsection}{\numberline {4.1.2}Member Function Documentation}{9}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}coherenceTime()}{9}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}deleteOldBuffers()}{9}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}doHandover()}{9}{subsubsection.4.1.2.3}%
+\contentsline {subsubsection}{\numberline {4.1.2.4}finish()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{10}{subsubsection.4.1.2.4}%
+\contentsline {subsubsection}{\numberline {4.1.2.5}finish()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{10}{subsubsection.4.1.2.5}%
+\contentsline {subsubsection}{\numberline {4.1.2.6}getAverageCqi()}{10}{subsubsection.4.1.2.6}%
+\contentsline {subsubsection}{\numberline {4.1.2.7}getDasFilter()}{10}{subsubsection.4.1.2.7}%
+\contentsline {subsubsection}{\numberline {4.1.2.8}getMasterId()}{10}{subsubsection.4.1.2.8}%
+\contentsline {subsubsection}{\numberline {4.1.2.9}getVarianceCqi()}{10}{subsubsection.4.1.2.9}%
+\contentsline {subsubsection}{\numberline {4.1.2.10}handleAirFrame()}{10}{subsubsection.4.1.2.10}%
+\contentsline {subsubsection}{\numberline {4.1.2.11}handleSelfMessage()}{11}{subsubsection.4.1.2.11}%
+\contentsline {subsubsection}{\numberline {4.1.2.12}handleUpperMessage()}{11}{subsubsection.4.1.2.12}%
+\contentsline {subsubsection}{\numberline {4.1.2.13}handoverHandler()}{11}{subsubsection.4.1.2.13}%
+\contentsline {subsubsection}{\numberline {4.1.2.14}initialize()}{11}{subsubsection.4.1.2.14}%
+\contentsline {subsubsection}{\numberline {4.1.2.15}recordCqi()}{11}{subsubsection.4.1.2.15}%
+\contentsline {subsubsection}{\numberline {4.1.2.16}sendFeedback()}{11}{subsubsection.4.1.2.16}%
+\contentsline {subsubsection}{\numberline {4.1.2.17}triggerHandover()}{12}{subsubsection.4.1.2.17}%
+\contentsline {subsubsection}{\numberline {4.1.2.18}updateHysteresisTh()}{12}{subsubsection.4.1.2.18}%
+\contentsline {subsection}{\numberline {4.1.3}Member Data Documentation}{12}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}candidateMasterId\_}{12}{subsubsection.4.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.1.3.2}candidateMasterRssi\_}{12}{subsubsection.4.1.3.2}%
+\contentsline {subsubsection}{\numberline {4.1.3.3}cqiDlCount\_}{12}{subsubsection.4.1.3.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.4}cqiDlSamples\_}{12}{subsubsection.4.1.3.4}%
+\contentsline {subsubsection}{\numberline {4.1.3.5}cqiDlSum\_}{12}{subsubsection.4.1.3.5}%
+\contentsline {subsubsection}{\numberline {4.1.3.6}cqiUlCount\_}{13}{subsubsection.4.1.3.6}%
+\contentsline {subsubsection}{\numberline {4.1.3.7}cqiUlSamples\_}{13}{subsubsection.4.1.3.7}%
+\contentsline {subsubsection}{\numberline {4.1.3.8}cqiUlSum\_}{13}{subsubsection.4.1.3.8}%
+\contentsline {subsubsection}{\numberline {4.1.3.9}currentMasterRssi\_}{13}{subsubsection.4.1.3.9}%
+\contentsline {subsubsection}{\numberline {4.1.3.10}das\_}{13}{subsubsection.4.1.3.10}%
+\contentsline {subsubsection}{\numberline {4.1.3.11}dasRssiThreshold\_}{13}{subsubsection.4.1.3.11}%
+\contentsline {subsubsection}{\numberline {4.1.3.12}enableHandover\_}{13}{subsubsection.4.1.3.12}%
+\contentsline {subsubsection}{\numberline {4.1.3.13}handoverAttachment\_}{14}{subsubsection.4.1.3.13}%
+\contentsline {subsubsection}{\numberline {4.1.3.14}handoverDelta\_}{14}{subsubsection.4.1.3.14}%
+\contentsline {subsubsection}{\numberline {4.1.3.15}handoverDetachment\_}{14}{subsubsection.4.1.3.15}%
+\contentsline {subsubsection}{\numberline {4.1.3.16}handoverLatency\_}{14}{subsubsection.4.1.3.16}%
+\contentsline {subsubsection}{\numberline {4.1.3.17}handoverStarter\_}{14}{subsubsection.4.1.3.17}%
+\contentsline {subsubsection}{\numberline {4.1.3.18}handoverTrigger\_}{14}{subsubsection.4.1.3.18}%
+\contentsline {subsubsection}{\numberline {4.1.3.19}hysteresisFactor\_}{14}{subsubsection.4.1.3.19}%
+\contentsline {subsubsection}{\numberline {4.1.3.20}hysteresisTh\_}{15}{subsubsection.4.1.3.20}%
+\contentsline {subsubsection}{\numberline {4.1.3.21}lastFeedback\_}{15}{subsubsection.4.1.3.21}%
+\contentsline {subsubsection}{\numberline {4.1.3.22}mac\_}{15}{subsubsection.4.1.3.22}%
+\contentsline {subsubsection}{\numberline {4.1.3.23}masterId\_}{15}{subsubsection.4.1.3.23}%
+\contentsline {subsubsection}{\numberline {4.1.3.24}minRssi\_}{15}{subsubsection.4.1.3.24}%
+\contentsline {subsubsection}{\numberline {4.1.3.25}pdcp\_}{15}{subsubsection.4.1.3.25}%
+\contentsline {subsubsection}{\numberline {4.1.3.26}rlcUm\_}{15}{subsubsection.4.1.3.26}%
+\contentsline {subsubsection}{\numberline {4.1.3.27}rxAmount\_}{16}{subsubsection.4.1.3.27}%
+\contentsline {subsubsection}{\numberline {4.1.3.28}servingCell\_}{16}{subsubsection.4.1.3.28}%
+\contentsline {subsubsection}{\numberline {4.1.3.29}txAmount\_}{16}{subsubsection.4.1.3.29}%
+\contentsline {subsubsection}{\numberline {4.1.3.30}useBattery\_}{16}{subsubsection.4.1.3.30}%
+\contentsline {chapter}{\numberline {5}File Documentation}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}src/stack/phy/layer/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lte\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Phy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ue.cc File Reference}{17}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Function Documentation}{17}{subsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.1}Define\_Module()}{17}{subsubsection.5.1.1.1}%
+\contentsline {section}{\numberline {5.2}src/stack/phy/layer/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lte\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Phy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ue.h File Reference}{18}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Macro Definition Documentation}{18}{subsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.1.1}OUTPUT\_RAW\_RSSI\_DATA\_PATH}{18}{subsubsection.5.2.1.1}%
+\contentsline {chapter}{Index}{19}{section*.12}%
