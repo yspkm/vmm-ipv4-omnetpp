@@ -70,6 +70,9 @@ data_extraction() {
 		cd $dat_dir
 		source venv/bin/acitivate
 		python3 main.py
+		cp -r kf_data/visualized_data ../docs/report/img/kf
+		cp -r raw_data/visualized_data ../docs/report/img/raw
+		cp -r raw_kf_compare_plot ../docs/report/img/cmp
 	)
 }
 
