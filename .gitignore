@@ -37,5 +37,5 @@
 # logs
 *.log
 
-inet4.5/
-simu5G/
+#inet4.5/
+#simu5G/
