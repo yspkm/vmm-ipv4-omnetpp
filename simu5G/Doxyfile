@@ -1,8 +1,0 @@
-PROJECT_NAME           = "My Project"
-OUTPUT_DIRECTORY       = ./docs
-GENERATE_HTML          = NO 
-GENERATE_LATEX         = YES
-INPUT                  = ./src/stack/phy/layer/LtePhyUe.cc ./src/stack/phy/layer/LtePhyUe.h
-RECURSIVE              = YES
-FILE_PATTERNS          = *.cc *.h
-EXTRACT_ALL            = YES

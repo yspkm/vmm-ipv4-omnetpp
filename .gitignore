@@ -36,3 +36,6 @@
 
 # logs
 *.log
+
+inet4.5/
+simu5G/
