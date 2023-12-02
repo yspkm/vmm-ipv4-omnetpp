@@ -1,5 +1,9 @@
 #!/bin/bash
 
+log() {
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1"
+}
+
 copy_file() {
     local fname=$1
     local src_dir=$2   
@@ -8,10 +12,10 @@ copy_file() {
     local src_path="$src_dir/$fname"
     local dst_path="$dst_dir/$fname"
 
-    echo "Copying file from $src_path to $dst_path..."
+    log "Copying file from $src_path to $dst_path..."
     if cp "$src_path" "$dst_path"; then echo "Successfully copied $fname to $dst_dir"
     else
-        echo "Failed to copy $fname from $src_dir to $dst_dir"
+        log "Failed to copy $fname from $src_dir to $dst_dir"
     fi
 }
 
@@ -72,15 +76,19 @@ data_extraction() {
 source ./params.sh
 case "$1" in
     setup_simulation)
+	log "setup_simulation"
         setup_simulation
         ;;
     run_simulation_gui)
+	log "run_simulation_gui"
         run_simulation_gui
         ;;
     run_simulation_cli)
+	log "run_simulation_cli"
         run_simulation_cli
         ;;
     data_extraction)
+	log "data_extraction"
         data_extraction
         ;;
     *)

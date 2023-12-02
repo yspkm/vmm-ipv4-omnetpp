@@ -30,11 +30,12 @@ This project is centered around the analysis of handover procedures and the ping
 
 - Ubuntu 22.04 LTS
 - Python 3.10.x
-- OMNeT++ or equivalent network simulation tools
+- OMNeT++ 6.0.1
 
 ### Setup
 
 - Run `init.sh` to install necessary packages and set up the environment.
+- You must aleady installed omnetpp 6.0.1
 
   ```bash
   ./init.sh
