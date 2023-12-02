@@ -76,12 +76,6 @@ install_simu5g(){
 }
 
 build_project() {
-	sudo apt-get update
-	sudo apt-get install -y rar 
-	(
-		cd init
-		./run.sh
-	)
 	(
 		source $HOME/.profile
 		cd inet4.5
