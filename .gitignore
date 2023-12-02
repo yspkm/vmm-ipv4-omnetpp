@@ -33,3 +33,6 @@
 
 # Dataset
 *.zip
+
+# logs
+*.log
