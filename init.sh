@@ -43,10 +43,16 @@ install_omnetpp() {
     tar xvfz $OMNETPP_TGZ
     rm $OMNETPP_TGZ
     mv $OMNETPP $HOME/
+
     echo "export PATH=\"\$PATH:$OMNETPP_HOME/bin\"" >> $HOME/.profile
     echo "[ -f \"$OMNETPP_HOME/setenv\" ] && source \"$OMNETPP_HOME/setenv\" > /dev/null 2>&1" >> $HOME/.profile
-    (
+
+    echo "export PATH=\"\$PATH:$OMNETPP_HOME/bin\"" >> $HOME/.bashrc
+    echo "[ -f \"$OMNETPP_HOME/setenv\" ] && source \"$OMNETPP_HOME/setenv\" > /dev/null 2>&1" >> $HOME/.bashrc
+
 	source $HOME/.profile
+	source $HOME/.bashrc
+
         cd $OMNETPP_HOME
         source setenv -f
         ./configure
@@ -56,9 +62,7 @@ install_omnetpp() {
 	# Verifying 
 	cd $OMNETPP_HOME/samples/aloha
 	./aloha
-    )
 }
-
 
 build_project() {
 	sudo apt-get update
@@ -69,6 +73,7 @@ build_project() {
 	)
 	(
 		source $HOME/.profile
+		source $HOME/.bashrc
 		cd inet4.5
 		source setenv -f
 		make makefiles
@@ -77,6 +82,7 @@ build_project() {
 	)
 	(
 		source $HOME/.profile
+		source $HOME/.bashrc
 		cd simu5G
 		source setenv -f
 		make makefiles
