@@ -59,25 +59,14 @@ install_omnetpp() {
     )
 }
 
-install_inet(){
-	local INET_VERSION=4.5.0
-	local INET_TGZ=inet-$INET_VERSION-src.tgz
-	wget https://github.com/inet-framework/inet/releases/download/v$INET_VERSION/$INET_TGZ
-	tar -zxvf $INET_TGZ
-	rm $INET_TGZ
-}
-
-install_simu5g(){
-	local SIMU5G_VERSION=1.2.2
-	local SIMU5G=simu5G
-	local SIMU5G_TGZ=v$SIMU5G_VERSION.tar.gz
-	wget https://github.com/Unipisa/Simu5G/archive/refs/tags/$SIMU5G_TGZ
-	tar -zxvf $SIMU5G_TGZ
-	mv Simu5G-$SIMU5G_VERSION $SIMU5G
-	rm $SIMU5G_TGZ
-}
 
 build_project() {
+	sudo apt-get update
+	sudo apt-get install -r rar
+	(
+		cd init
+		./run.sh
+	)
 	(
 		source $HOME/.profile
 		cd inet4.5
@@ -109,14 +98,6 @@ log "Python environment installation complete"
 log "Starting OMNeT++ installation"
 install_omnetpp
 log "OMNeT++ installation complete"
-
-log "Starting INET installation"
-install_inet
-log "INET installation complete"
-
-log "Starting Simu5G installation"
-install_simu5g
-log "Simu5G installation complete"
 
 log "Starting project build"
 build_project
