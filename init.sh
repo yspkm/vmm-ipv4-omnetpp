@@ -43,11 +43,10 @@ install_omnetpp() {
     tar xvfz $OMNETPP_TGZ
     rm $OMNETPP_TGZ
     mv $OMNETPP $HOME/
-    echo "[ -f \"\$OMNETPP_HOME/setenv\" ] && source \"\$OMNETPP_HOME/setenv\" > /dev/null 2>&1" >> $HOME/.profile
-    echo 'export PATH="$PATH:$OMNETPP_HOME/bin"' >> $HOME/.profile
-
+    echo "export PATH=\"\$PATH:$OMNETPP_HOME/bin\"" >> $HOME/.profile
+    echo "[ -f \"$OMNETPP_HOME/setenv\" ] && source \"$OMNETPP_HOME/setenv\" > /dev/null 2>&1" >> $HOME/.profile
     (
-		source $HOME/.profile
+	source $HOME/.profile
         cd $OMNETPP_HOME
         source setenv -f
         ./configure
