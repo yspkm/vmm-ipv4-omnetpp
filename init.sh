@@ -36,14 +36,16 @@ install_omnetpp() {
     sudo apt-get install -y mpi-default-dev
 
     # Installing Omnetpp
-    local OMNETPP=omnetpp-6.0.1
-    local OMNETPP_HOME=$HOME/$OMNETPP
-    local OMNETPP_TGZ=$OMNETPP-linux-x86_64.tgz
+    OMNETPP=omnetpp-6.0.1
+    OMNETPP_HOME=$HOME/$OMNETPP
+    OMNETPP_TGZ=$OMNETPP-linux-x86_64.tgz
     wget https://github.com/omnetpp/omnetpp/releases/download/$OMNETPP/$OMNETPP_TGZ
     tar xvfz $OMNETPP_TGZ
     rm $OMNETPP_TGZ
     mv $OMNETPP $HOME/
-    echo '[ -f "$OMNETPP_HOME/setenv" ] && source "$OMNETPP_HOME/setenv" > /dev/null 2 >&1' >> $HOME/.profile
+    echo "[ -f \"\$OMNETPP_HOME/setenv\" ] && source \"\$OMNETPP_HOME/setenv\" > /dev/null 2>&1" >> $HOME/.profile
+    echo 'export PATH="$PATH:$OMNETPP_HOME/bin"' >> $HOME/.profile
+
     (
 		source $HOME/.profile
         cd $OMNETPP_HOME
