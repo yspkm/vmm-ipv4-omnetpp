@@ -49,7 +49,8 @@ install_omnetpp() {
         cd $OMNETPP_HOME
         source setenv -f
         ./configure
-        make -j $(( ( $(nproc) + 1 ) / 2 ))
+        #make -j $(( ( $(nproc) + 1 ) / 2 ))
+	make -j $(nproc)
 
 	# Verifying 
 	cd $OMNETPP_HOME/samples/aloha
@@ -60,7 +61,7 @@ install_omnetpp() {
 install_inet(){
 	local INET_VERSION=4.5.0
 	local INET_TGZ=inet-$INET_VERSION-src.tgz
-	wget https://github.com/inet-framework/inet/releases/download/$INET_VERSION/$INET_TGZ
+	wget https://github.com/inet-framework/inet/releases/download/v$INET_VERSION/$INET_TGZ
 	tar -zxvf $INET_TGZ
 	rm $INET_TGZ
 }
@@ -81,14 +82,16 @@ build_project() {
 		cd inet4.5
 		source setenv -f
 		make makefiles
-		make -j $(( ( $(nproc) + 1 ) / 2 ))
+		#make -j $(( ( $(nproc) + 1 ) / 2 ))
+		make -j $(nproc)
 	)
 	(
 		source $HOME/.profile
 		cd simu5G
 		source setenv -f
 		make makefiles
-		make -j $(( ( $(nproc) + 1 ) / 2 ))
+		#make -j $(( ( $(nproc) + 1 ) / 2 ))
+		make -j $(nproc)
 	)
 }
 
