@@ -32,7 +32,6 @@ network MultiCell_Standalone
     parameters:
         int numUe = default(10); // up to 10
         int numBgCells = default(1);
-        @display("i=block/network2;bgb=1088.032,678.896;bgi=background/budapast");
     submodules:
         channelControl: LteChannelControl {
             @display("p=50,25;is=s");
@@ -62,13 +61,6 @@ network MultiCell_Standalone
             @display("p=500,215");
         }
 
-        //# gnb1: gNodeB { @display("p=250,500;is=vl");}
-        //# gnb2: gNodeB { @display("p=250,250.556;is=vl");}
-        //# gnb3: gNodeB { @display("p=750,250.556;is=vl");}
-        //# gnb4: gNodeB { @display("p=1000,500.556;is=vl");}
-        //# gnb5: gNodeB { @display("p=750,750.556;is=vl");}
-        //# ue[numUe]: NRUe { @display("p=499.056,428.244");}
-
         gnb1: gNodeB {
             @display("p=256.62,285.285;is=vl");
         }
@@ -87,7 +79,6 @@ network MultiCell_Standalone
         ue[numUe]: NRUe {
             @display("p=random");
         }
-
 
         bgCell[numBgCells]: BackgroundCell {
             @display("p=111.93,539.175;is=vl");

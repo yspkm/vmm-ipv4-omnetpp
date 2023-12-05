@@ -314,14 +314,12 @@ void LtePhyUe::handoverHandler(LteAirFrame* frame, UserControlInfo* lteInfo)
 
     //TODO_2023-2_10000_LINE_PROJECT” : Raw RSSI Value of All UE, Kalman Filtered RSSI Value of All UE
 
-    //if (int(NOW.dbl())!=0){
-        int ueIndex = nodeId_ - 2048;
-        int masterIndex = lteInfo->getSourceId();
-        std::string outputString = std::to_string(int(NOW.dbl())) + ", " + std::to_string(ueIndex) + ", " + std::to_string(masterIndex) + ", " + std::to_string(rssi) + "\n";
-        std::ofstream outputFile(OUTPUT_RAW_RSSI_DATA_PATH, std::ios_base::app);
-        outputFile << outputString;
-        outputFile.close();
-    //}
+    int ueIndex = nodeId_ - 2048;
+    int masterIndex = lteInfo->getSourceId();
+    std::string outputString = std::to_string(int(NOW.dbl())) + ", " + std::to_string(ueIndex) + ", " + std::to_string(masterIndex) + ", " + std::to_string(rssi) + "\n";
+    std::ofstream outputFile(OUTPUT_RAW_RSSI_DATA_PATH, std::ios_base::app);
+    outputFile << outputString;
+    outputFile.close();
     EV << "[2023] " << "RSSI: " << rssi << ", minRssi_: " << minRssi_ << endl;
 
 

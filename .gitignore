@@ -39,3 +39,5 @@
 
 inet4.5/
 simu5G/
+/.metadata/
+*__pycache__/

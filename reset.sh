@@ -1,20 +1,20 @@
 #!/bin/bash
 
-source params.sh
-
-rm -rf ./inet4.5
-rm -rf ./simu5G
-rm -rf ./dat/raw_rssi_data.csv \
-	./dat/raw_data \
-       	./dat/kf_data \
-	./dat/raw_kf_compare_plot \
-	./src/DataPath.h
-
 echo "Do you want to change the modulation? [y/N]"
 read -r response
 
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
     echo "Changing modulation..."
+	source params.sh
+	rm -rf \
+		$dat_dir/$raw_rssi_fname \
+		$venv_dir \
+		$raw_dir \
+    	$kf_dir \
+		$cmp_dir \
+		$src_dir/$file_path_header_fname \
+		$inet_dir \
+		$simu5g_dir
 else
     echo "Modulation change cancelled."
 fi

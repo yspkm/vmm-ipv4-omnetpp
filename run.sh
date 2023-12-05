@@ -43,7 +43,8 @@ setup_simulation() {
 		cd $root_dir/simu5G
     	source setenv -f
 		make makefiles
-		make -j $(( ( $(nproc) + 1 ) / 2 ))
+		#make -j $(( ( $(nproc) + 1 ) / 2 ))
+		make -j $(nproc)
 	)
 }
 
@@ -68,11 +69,11 @@ run_simulation_gui() {
 data_extraction() {
 	(
 		cd $dat_dir
-		source venv/bin/acitivate
+		source venv/bin/activate
 		python3 main.py
-		cp -r kf_data/visualized_data ../docs/report/img/kf
-		cp -r raw_data/visualized_data ../docs/report/img/raw
-		cp -r raw_kf_compare_plot ../docs/report/img/cmp
+		#cp -r kf_data/visualized_data ../docs/report/img/kf
+		#cp -r raw_data/visualized_data ../docs/report/img/raw
+		#cp -r raw_kf_compare_plot ../docs/report/img/cmp
 	)
 }
 

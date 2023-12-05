@@ -32,23 +32,31 @@ This project is centered around the analysis of handover procedures and the ping
 - Python 3.10.x
 - OMNeT++ 6.0.1
 
-### Setup
+### Initial Setup
 
-- Run `init.sh` to install necessary packages and set up the environment.
+- Run `make install` to install necessary packages and set up the environment.
 - You must aleady installed omnetpp 6.0.1
 
   ```bash
-  ./init.sh
+  make install
   ```
 
-## Usage
+## Simulation
+
+### General Help
+
+- To view available make targets and their descriptions, use:
+
+  ```bash
+  make help
+  ```
 
 ### Make all
 
-- Use `Makefile` for run simulation
+- Use `Makefile` for install, setup, cli-run, and data-extraction
 
   ```bash
-  make
+  make all
   ```
 
 ### Simulation Setup
@@ -85,10 +93,11 @@ This project is centered around the analysis of handover procedures and the ping
 
 ## Project Structure
 
-- `init.sh`: Environment setup script.
 - `Makefile`: Manages simulation setup, running, and cleanup.
+- `init.sh`: Environment setup script.
 - `run.sh`: Script containing simulation functions.
-- `main.py`: Data processing and visualization Python script.
+- `reset.sh`: Script containing simulation reset project.
+- `dat/main.py`: Data processing and visualization Python script.
 
 ## License
 

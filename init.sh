@@ -27,22 +27,16 @@ install_python_environment() {
 
 build_project() {
 	(
-		source $HOME/.profile
-		source $HOME/.bashrc
 		cd inet4.5
 		source setenv -f
 		make makefiles
-		#make -j $(( ( $(nproc) + 1 ) / 2 ))
-		make -j $(nproc)
+		make -j $(( ( $(nproc) + 1 ) / 2 ))
 	)
 	(
-		source $HOME/.profile
-		source $HOME/.bashrc
 		cd simu5G
 		source setenv -f
 		make makefiles
-		#make -j $(( ( $(nproc) + 1 ) / 2 ))
-		make -j $(nproc)
+		make -j $(( ( $(nproc) + 1 ) / 2 ))
 	)
 }
 
